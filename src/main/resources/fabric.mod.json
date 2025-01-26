@@ -1,0 +1,42 @@
+{
+  "schemaVersion": 1,
+  "id": "messcore",
+  "version": "${version}",
+
+  "name": "MessCore",
+  "description": "Common library for mods derived from MessMod.", 
+  "icon": "assets/MessMod.png", 
+  "license": "CC-0",
+  "authors": [
+    "lovexyn0827"
+  ],
+  "contact": {
+    "homepage": "https://github.com/lovexyn0827/MessMod"
+  },
+
+  "environment": "*",
+  "entrypoints": {
+    "main": [
+      "lovexyn0827.mess.MessMod::INSTANCE"
+    ]
+  },
+  "mixins": [
+    "messcore.mixins.json"
+  ],
+
+  "accessWidener" : "messcore.accesswidener",
+  "depends": {
+    "fabricloader": ">=0.7.4",
+    "minecraft": "1.16.x"
+  },
+  
+  "recommends": { 
+  },
+  
+  "conflicts": {
+  }, 
+  
+  "breaks": {
+  	"messmod": "*"
+  }
+}
